@@ -1,0 +1,162 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+
+h1 {
+    background: linear-gradient(90deg, #ff80b5, #ffc6d9);
+    color: white;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 4px solid #ff98c3;
+    border-radius: 0 0 20px 20px;
+}
+
+
+button, a.button {
+    background-color: #ff80b5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+button:hover, a.button:hover {
+    background-color: #ff5899;
+}
+
+
+div[style*='border:1px'] {
+    background-color: #fff;
+    border: 2px solid #ffd6e2;
+    box-shadow: 0px 2px 6px rgba(255, 128, 181, 0.2);
+    border-radius: 15px !important;
+    transition: 0.3s;
+}
+
+div[style*='border:1px']:hover {
+    transform: scale(1.05);
+}
+
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #ff80b5;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ffd6e2;
+}
+
+tr:hover {
+    background-color: #fff0f6;
+}
+
+
+a {
+    color: #ff5899;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #ff80b5;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 2px 10px rgba(255, 128, 181, 0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #fff7fa;
+}
+
+.slider {
+  width: 90%;
+  max-width: 900px;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 128, 181, 0.3);
+  position: relative;
+  background-color:#ff80b5;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+   background-color:#ff80b5;
+
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+   background-color:#ff80b5;
+
+}
+
+.slide.active {
+  opacity: 1;
+   background-color:#ff80b5;
+
+}
+
